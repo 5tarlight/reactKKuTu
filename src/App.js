@@ -1,8 +1,13 @@
 import React from 'react';
+import { BrowserRouter, Route } from "react-router-dom";
+import { Portal, Login } from './page'
 
 function App() {
   return (
-      <h1>Hello World</h1>
+    <BrowserRouter>
+      <Route exact path={"/"} component={Portal} />
+      <Route exact path={"/login"} component={Login} />
+    </BrowserRouter>
   );
 }
 
