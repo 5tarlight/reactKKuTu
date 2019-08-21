@@ -4,20 +4,28 @@ import styled from 'styled-components'
 
 const RightHeadferItemWrapper = styled.span`
   float: right;
-  margin: 0rem 1rem 0rem 1rem;
   color: white;
+  width: 5rem;
 `
 
 const LabelWrapper = styled.div`
-  color: white;
+  color: black;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 0.6875rem;
+  cursor: pointer;
+  transition: color 300ms ease;
+  font-family: NBGothic, 돋움;
+  padding-top: 0.2rem;
+
+  &:hover {
+    color: white;
+  }
 `
 
 const RightHeaderItem = ({ href, children }) => {
   return (
     <RightHeadferItemWrapper>
-      <Link to={href}>
+      <Link to={href} style={{ textDecoration: 'none' }}>
         <LabelWrapper>{children}</LabelWrapper>
       </Link>
     </RightHeadferItemWrapper>
