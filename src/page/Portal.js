@@ -1,11 +1,11 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import React, { Fragment } from 'react'
+import { PortalBackground } from '../components'
 
 const Portal = () => (
-  <div>
+  <Fragment>
+    <PortalBackground />
     <h1>Portal</h1>
-    <Link to={'/login'}>로그인하기</Link>
-  </div>
+  </Fragment>
 )
 
 export default Portal
