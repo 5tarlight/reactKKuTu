@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react'
-import { PortalBackground } from '../components'
+import { PortalBackground, MiddleBox } from '../components'
 
 const Portal = () => (
   <Fragment>
     <PortalBackground />
-    <h1>Portal</h1>
+    <MiddleBox />
   </Fragment>
 )
 
