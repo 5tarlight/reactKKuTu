@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { TitleLogo, BulettinBox } from '../'
+import { TitleLogo, BulettinBox, JoinButton, PlayButton, TopBox } from '../'
 
 const MiddleBoxWrapper = styled.div`
   margin-left: 28.5625rem;
@@ -12,7 +12,14 @@ const MiddleBox = () => {
   return (
     <MiddleBoxWrapper>
       <TitleLogo />
-      <BulettinBox></BulettinBox>
+
+      <TopBox>
+        <PlayButton>
+          <JoinButton />
+        </PlayButton>
+      </TopBox>
+
+      <BulettinBox />
     </MiddleBoxWrapper>
   )
 }
