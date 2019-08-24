@@ -29,9 +29,13 @@ const ButtonWrapper = styled.button`
   }
 `
 
+const onHandle = (item) => {
+  item.preventDefault()
+}
+
 const JoinButton = () => {
   return (
-    <ButtonWrapper>게임 시작</ButtonWrapper>
+    <ButtonWrapper onClick={onHandle}>게임 시작</ButtonWrapper>
   )
 }
 
