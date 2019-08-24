@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const Holder = styled.h3`
@@ -10,12 +10,16 @@ const Holder = styled.h3`
   font-size: 1rem;
 `
 
+const LogoWrapper = styled.div`
+  margin-left: 4.75rem;
+`
+
 const TitleLogo = () => {
   return (
-    <Fragment>
+    <LogoWrapper>
       <Holder>글자로 놀자! 끄투 온라인</Holder>
       <img style={{marginTop: '-1rem'}} src='/img/short_logo.png' alt='KKUTU' />
-    </Fragment>
+    </LogoWrapper>
   )
 }
 
