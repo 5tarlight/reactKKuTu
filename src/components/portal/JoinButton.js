@@ -15,7 +15,7 @@ const ButtonWrapper = styled.button`
   box-sizing: inherit;
   font-family: inherit;
   border-radius: 1rem;
-  background-color: #6f572b;
+  background-color: rgba(0, 0, 0, 0.7);
   transition-duration: 0.3s;
   color: white;
   font-weight: bolder;
